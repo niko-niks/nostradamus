@@ -37,4 +37,4 @@
             <p class="text-gray-400">&copy; {{ date('Y') }} DriveMNL. All rights reserved.</p>
         </div>
     </div>
-</footer> 
+</footer>

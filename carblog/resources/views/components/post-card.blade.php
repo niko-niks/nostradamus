@@ -47,5 +47,13 @@
                 </div>
             </div>
         </div>
+</div>
+@if(auth()->check() && auth()->id() === $post['user_id'])
+    <div class="p-6 border-t border-gray-700 flex justify-end">
+        <a href="{{ route('articles.edit', $post['id']) }}"
+           class="text-yellow-400 hover:text-yellow-500 font-medium">
+            Edit
+        </a>
     </div>
+@endif
 </article> 
