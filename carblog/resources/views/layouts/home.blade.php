@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'DriveMNL') }} - @yield('title', 'Automotive Excellence')</title>
+    <title>{{ config('app.name', 'DriveMNL') }} - @yield('title', 'Automotive Blog')</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -83,13 +83,14 @@
 
     </style>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-100">
+<body class="min-h-screen bg-gray-900 text-gray-100">
     @include('components.navbar')
     
+    <!-- Main Content -->
     <main>
         @yield('content')
     </main>
-    
+
     @include('components.footer')
     
     <script>

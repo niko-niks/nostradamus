@@ -15,8 +15,14 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
+            $table->text('excerpt')->nullable();
+            $table->string('category')->default('General');
             $table->string('image')->nullable();
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->integer('views')->default(0);
+            $table->integer('likes')->default(0);
+            $table->boolean('hot')->default(false);
+            $table->boolean('published')->default(true);
             $table->timestamps();
         });
     }
