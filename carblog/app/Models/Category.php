@@ -87,7 +87,7 @@ class Category extends Model
             'maintenance' => [
                 'name' => 'Maintenance & Care',
                 'description' => 'Servicing, repairs, and car care tips',
-                'icon' => 'tool'
+                'icon' => 'settings'
             ],
             'news' => [
                 'name' => 'Car News',

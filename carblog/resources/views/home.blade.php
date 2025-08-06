@@ -184,6 +184,16 @@
                                         'arrow-left' => 'arrow-left',
                                         'arrow-up' => 'arrow-up',
                                         'arrow-down' => 'arrow-down',
+                                        // Category-specific icons
+                                        'zap' => 'zap',
+                                        'trophy' => 'trophy',
+                                        'crown' => 'crown',
+                                        'battery' => 'battery',
+                                        'wrench' => 'wrench',
+                                        'flag' => 'flag',
+                                        'newspaper' => 'newspaper',
+                                        'book-open' => 'book-open',
+                                        'settings' => 'settings',
                                     ];
                                     $iconName = $iconMap[$category->icon] ?? 'circle';
                                 @endphp
