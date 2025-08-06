@@ -161,7 +161,6 @@ class Article extends Model
             'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=600&fit=crop',
             'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&h=600&fit=crop',
             'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
-            'https://images.unsplash.com/photo-1563720223186-1ea4c3eaa6c8?w=800&h=600&fit=crop',
             'https://images.unsplash.com/photo-1582639510494-c80b5de9f148?w=800&h=600&fit=crop',
             'https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&h=600&fit=crop',
             'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&h=600&fit=crop',
