@@ -11,11 +11,12 @@
             <div class="hidden md:flex items-center space-x-8">
                 <a href="{{ route('home') }}" class="text-gray-300 hover:text-white transition-colors">Home</a>
                 <a href="{{ route('articles.index') }}" class="text-gray-300 hover:text-white transition-colors">Articles</a>
-                
+
                 @auth
                     <a href="{{ route('articles.create') }}" class="text-gray-300 hover:text-white transition-colors">Create Article</a>
                     <div class="flex items-center space-x-4">
                         <span class="text-gray-300">{{ Auth::user()->name }}</span>
+                        <a href="{{ route('profile.show') }}" class="text-gray-300 hover:text-white transition-colors">Profile</a>
                         <form action="{{ route('logout') }}" method="POST" class="inline">
                             @csrf
                             <button type="submit" class="text-gray-300 hover:text-white transition-colors">Logout</button>
@@ -41,11 +42,12 @@
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800 border-t border-gray-700">
             <a href="{{ route('home') }}" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors">Home</a>
             <a href="{{ route('articles.index') }}" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors">Articles</a>
-            
+
             @auth
                 <a href="{{ route('articles.create') }}" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors">Create Article</a>
                 <div class="px-3 py-2">
                     <span class="text-gray-300">{{ Auth::user()->name }}</span>
+                    <a href="{{ route('profile.show') }}" class="block px-3 py-2 text-gray-300 hover:text-white transition-colors">Profile</a>
                 </div>
                 <form action="{{ route('logout') }}" method="POST">
                     @csrf

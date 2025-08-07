@@ -4,13 +4,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ProfileController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::resource('articles', ArticleController::class);
 Route::get('/articles/category/{category}', [ArticleController::class, 'category'])->name('articles.category');
 Route::post('/articles/{article}/like', [ArticleController::class, 'like'])->name('articles.like');
+Route::get('/profile', [ProfileController::class, 'show'])->name('profile.show');
 
-// Authentication routes
+// Authentication routes,
 Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
